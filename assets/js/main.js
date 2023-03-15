@@ -2,8 +2,20 @@
 
 
 
-// create array with grocery items inside 
+// create array with shopping list items inside 
+
+const shoppingList = [
+    "Avocado",
+    "Toothpaste",
+    "Chicken breast",
+    "Paper towels",
+    "Blueberries"
+]
+
+
 //take an element list from HTML and save it in a variable  
+let shoppingListSection = document.querySelector("ul")
+
 //create a while loop to slide the array
     // create an element for HTML 
     // add element from array in HTMLelement 
