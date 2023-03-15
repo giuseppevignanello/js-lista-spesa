@@ -43,6 +43,7 @@ submitEl.addEventListener("click",
         newListItem.append(newItem.value);
         shoppingListSection.append(newListItem);
         console.log(newItem.value);
+        newItem.value = ""
       
         
     }
