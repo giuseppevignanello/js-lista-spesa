@@ -2,39 +2,55 @@
 
 
 
-// create array with shopping list items inside 
+//  create array with shopping list items inside 
 
-const shoppingList = [
-    "Avocado",
-    "Toothpaste",
-    "Chicken breast",
-    "Paper towels",
-    "Blueberries"
-]
+ const shoppingList = [
+      "Avocado",
+      "Toothpaste",
+      "Chicken breast",
+      "Paper towels",
+      "Blueberries"
+ ];
 
 
-//take an element list from HTML and save it in a variable  
-let shoppingListSection = document.querySelector("ul"); 
+ let shoppingListSection = document.querySelector("ul");
 
-//create a while loop to slide the array
 
-i = 0 
+ i = 0
 
-while(i<shoppingList.length) {
-    // create an element for HTML 
-   
-    
-    let listItem = document.createElement("ul"); 
+ while (i < shoppingList.length) {
+     // create an element for HTML 
+     let listItem = document.createElement("li");
      // add element from array in HTMLelement 
-     listItem.append(shoppingList[i]); 
+     listItem.append(shoppingList[i]);
      //append the element to HTMLlist 
      shoppingListSection.append(listItem)
-    
-    
+     i++
+ }
 
-    i++
-}
-    
+//take an element list from HTML and save it in a variable  
+
+
+//create a while loop to slide the array
+const newItem = document.querySelector("input");
+const submitEl = document.getElementById("submit");
+
+
+submitEl.addEventListener("click",
+
+    function () {
+        let newListItem = document.createElement("li");
+        newListItem.append(newItem.value);
+        shoppingListSection.append(newListItem);
+        console.log(newItem.value);
+      
+        
+    }
+
+)
+
+
+
 
 
 // tools
