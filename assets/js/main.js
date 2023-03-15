@@ -14,13 +14,27 @@ const shoppingList = [
 
 
 //take an element list from HTML and save it in a variable  
-let shoppingListSection = document.querySelector("ul")
+let shoppingListSection = document.querySelector("ul"); 
 
 //create a while loop to slide the array
-    // create an element for HTML 
-    // add element from array in HTMLelement 
-    //append the element to HTMLlist 
 
+i = 0 
+
+while(i<shoppingList.length) {
+    // create an element for HTML 
+   
+    
+    let listItem = document.createElement("ul"); 
+     // add element from array in HTMLelement 
+     listItem.append(shoppingList[i]); 
+     //append the element to HTMLlist 
+     shoppingListSection.append(listItem)
+    
+    
+
+    i++
+}
+    
 
 
 // tools
